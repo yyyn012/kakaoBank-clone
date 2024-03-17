@@ -1,163 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
 /* header ----------------------------------------*/
 .header {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 80px;
   top: 0;
   left: 0;
-  background-color: white;
-  border-bottom: 1px solid #e6e3e3;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #ffef6b;
+  transition: transform 0.3s ease-in-out;
   z-index: 3;
 }
 
+.header .change-white {
+  background-color: white;
+  border-bottom: 1px solid #e6e3e3;
+}
+
 .nav {
-  width: 1080px;
-  height: 80px;
-  padding: 0;
-  margin: 0 auto;
-}
-
-.header .nav-logo {
-  float: left;
-  width: 130px;
-  line-height: 80px;
-}
-
-.header .logo1,
-.logo2 {
-  font-size: 25px;
-  text-decoration: none;
-  color: black;
-  margin: -2px;
-  cursor: pointer;
-}
-
-.header .logo2 {
-  font-weight: 700;
-}
-
-.header .nav-area {
-  float: right;
-  width: 220px;
-  height: 80px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.header .nav-btnA {
-  width: 120px;
-  height: 45px;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  background-color: #f7dd48;
-  cursor: pointer;
-  text-align: center;
-}
-
-.header .nav-btnA a {
-  color: black;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 45px;
-}
-
-.header i {
-  float: right;
-  text-align: center;
-  line-height: 70px;
-  font-size: 20px;
-  color: #000;
-}
-
-.header i:hover {
-  color: #aaa;
-}
-
-.header .menu {
-  float: right;
-  width: 380px;
-  height: 80px;
-  padding-right: 15px;
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  height: 80px;
 }
 
-.header .menu li a {
-  text-decoration: none;
-  text-align: center;
-  color: #000;
+.logo > img {
+  width: 80px;
+  height: 15px;
 }
 
-.header .menu li a:hover {
-  text-decoration: underline;
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
 }
 
-.menu-btn1,
-.menu-btn2,
-.menu-btn3,
-.menu-btn4 {
-  line-height: 80px;
-  padding: 27px 0 27px 0;
-}
-
-.menu1:hover .menu-btn1,
-.menu2:hover .menu-btn2,
-.menu3:hover .menu-btn3,
-.menu4:hover .menu-btn4 {
-  border-bottom: 2px solid #000;
-}
-
-.sub-menu1,
-.sub-menu2,
-.sub-menu3,
-.sub-menu4 {
-  position: fixed;
-  top: 80px;
-  left: 0;
-  width: 100%;
-  background: #fff;
-  opacity: 0;
-}
-
-.sub-menuCont1,
-.sub-menuCont2,
-.sub-menuCont3,
-.sub-menuCont4 {
-  width: 1100px;
-  padding: 50px 0 50px 0;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.header .menu ul .sub-ul-a {
-  font-size: 16px;
-  margin: 20px;
-}
-
-.header .menu ul li a {
-  font-size: 12px;
-}
-
-.header .menu ul li {
-  margin: 20px;
-}
-
-.menu1:hover .sub-menu1,
-.menu2:hover .sub-menu2,
-.menu3:hover .sub-menu3,
-.menu4:hover .sub-menu4 {
-  opacity: 1;
+.fa-bars {
+  font-size: 22px;
 }
 
 /* section1------------------------------------------*/
 .section1 {
-  width: 100%;
+  width: 100vw;
   height: 720px;
   margin: 80px 0 80px 0;
   background-color: #ffef6b;
@@ -165,7 +60,7 @@
 
 .section1-backImg {
   position: relative;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   height: 980px;
   margin: 0 auto;
   background-image: url(images/main1.png);
@@ -249,7 +144,7 @@
 
 .section2 {
   padding-top: 80px;
-  width: 1100px;
+  width: 100vw;
   height: 870px;
   margin: 0 auto;
   padding-bottom: 20px;
