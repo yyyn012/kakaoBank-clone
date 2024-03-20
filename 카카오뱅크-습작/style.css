@@ -40,10 +40,27 @@ a {
   height: 15px;
 }
 
-button {
+.menu-btn {
   background: none;
   border: 0;
   cursor: pointer;
+}
+
+.nav .menu-btn::after {
+  content: " ";
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.nav .menu {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.nav .menu.on {
+  width: 100vw;
+  height: 100vh;
 }
 
 .fa-bars {
