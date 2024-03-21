@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+body.no-scroll {
+  overflow: hidden !important;
+}
+
 /* header ----------------------------------------*/
 .header {
   position: fixed;
@@ -23,48 +27,66 @@ a {
   z-index: 3;
 }
 
-.header .change-white {
-  background-color: white;
-  border-bottom: 1px solid #e6e3e3;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-}
-
 .logo > img {
   width: 80px;
   height: 15px;
 }
 
-.menu-btn {
-  background: none;
-  border: 0;
+/* .header {
+  background-color: white;
+  border-bottom: 1px solid #e6e3e3;
+} */
+
+.nav {
+  background: url(./images/hamburger.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
+  z-index: 5;
+  position: absolute;
+  top: 10px;
+  right: 30px;
 }
 
-.nav .menu-btn::after {
-  content: " ";
-  display: inline-block;
-  white-space: nowrap;
+.nav.active {
+  background: url(images/x_thin_icon.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 5;
+  top: 10px;
+  right: 30px;
 }
 
-.nav .menu {
-  height: 0;
-  overflow: hidden;
-  transition: all 0.2s;
-}
-
-.nav .menu.on {
+.menu {
   width: 100vw;
   height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  background: white;
 }
 
-.fa-bars {
-  font-size: 22px;
+.menu a {
+  color: #000;
+}
+
+.menu li {
+  padding: 30px;
+}
+
+.menu.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
 }
 
 /* section1------------------------------------------*/
@@ -214,7 +236,7 @@ a {
 
 /* ------------------------------section-area */
 .section-area {
-  width: 100%;
+  width: 100vw;
   height: 35px;
   background: #fafafa;
 }
@@ -222,7 +244,7 @@ a {
 
 /* --------------------------------------------------section3 */
 .section3 {
-  width: 1000px;
+  /* width: 1000px; */
   height: 720px;
   padding: 0;
   margin: auto;
