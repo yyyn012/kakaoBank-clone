@@ -83,10 +83,8 @@ body.no-scroll {
   padding: 30px;
 }
 
-.menu.active {
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
+.on {
+  display: none;
 }
 
 /* section1------------------------------------------*/
