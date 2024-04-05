@@ -37,7 +37,7 @@ body.no-scroll {
   border-bottom: 1px solid #e6e3e3;
 } */
 
-.nav {
+/* .nav {
   background: url(./images/hamburger.png);
   background-size: cover;
   background-position: center;
@@ -49,7 +49,7 @@ body.no-scroll {
   position: absolute;
   top: 10px;
   right: 30px;
-}
+} */
 
 .nav.active {
   background: url(images/x_thin_icon.png);
@@ -65,22 +65,42 @@ body.no-scroll {
   right: 30px;
 }
 
-.menu {
+.list-title {
+  font-size: 17px;
   width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: none;
-  background: white;
+  height: 70px;
+  line-height: 70px;
+  display: block;
+  font-weight: 700;
+  display: block;
+  padding-bottom: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid #aaa;
 }
 
-.menu a {
-  color: #000;
+.content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
-.menu li {
-  padding: 30px;
+.content > span {
+  color: #ccc;
+  font-size: 13px;
+}
+
+.list-div {
+  width: 100vw;
+  height: 70px;
+}
+
+.list-item {
+  display: block;
+  width: 100vw;
+  height: 70px;
+  line-height: 70px;
+  border-bottom: 1px solid #ccc;
 }
 
 .on {
