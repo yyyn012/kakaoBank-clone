@@ -4,13 +4,14 @@
   list-style: none;
 }
 
+body {
+  width: 100vw;
+  height: 100vw;
+}
+
 a {
   color: #000;
   text-decoration: none;
-}
-
-body.no-scroll {
-  overflow: hidden !important;
 }
 
 /* header ----------------------------------------*/
@@ -20,11 +21,17 @@ body.no-scroll {
   height: 80px;
   top: 0;
   left: 0;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 0 24px 0;
   background-color: #ffef6b;
+  display: flex;
   transition: transform 0.3s ease-in-out;
-  z-index: 3;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  z-index: 9999;
 }
 
 .logo > img {
@@ -32,12 +39,12 @@ body.no-scroll {
   height: 15px;
 }
 
-/* .header {
+.header.active {
   background-color: white;
   border-bottom: 1px solid #e6e3e3;
-} */
+}
 
-/* .nav {
+.nav-btn {
   background: url(./images/hamburger.png);
   background-size: cover;
   background-position: center;
@@ -45,13 +52,13 @@ body.no-scroll {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  z-index: 5;
+  z-index: 99;
   position: absolute;
   top: 10px;
   right: 30px;
-} */
+}
 
-.nav.active {
+.nav-btn.active {
   background: url(images/x_thin_icon.png);
   background-size: cover;
   background-position: center;
@@ -60,9 +67,33 @@ body.no-scroll {
   height: 30px;
   cursor: pointer;
   transition: 0.3s;
-  z-index: 5;
+  z-index: 99;
   top: 10px;
   right: 30px;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 80px 25px 0;
+  padding-right: 25px;
+  width: 100vw;
+  height: 100vw;
+  display: none;
+  background: #fff;
+}
+
+.nav.active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 100vw;
+  height: 100vw;
+  border: 1px solid red;
 }
 
 .list-title {
@@ -76,6 +107,11 @@ body.no-scroll {
   padding-bottom: 5px;
   cursor: pointer;
   border-bottom: 1px solid #aaa;
+}
+
+.list-btn {
+  display: flex;
+  justify-content: space-between;
 }
 
 .content {

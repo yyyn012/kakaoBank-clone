@@ -1,14 +1,15 @@
-const listTitle = document.querySelectorAll(".list-title");
+const listBtn = document.querySelectorAll(".list-btn");
+const onClass = document.querySelectorAll(".on");
 const content = document.querySelectorAll(".content");
-const contentList = document.querySelectorAll(".content > li");
-const onConts = document.querySelectorAll(".on");
 
-listTitle.forEach((btn, index) => {
+const contentList = document.querySelectorAll(".content > li");
+
+listBtn.forEach((btn, index) => {
   btn.addEventListener("click", (e) => {
-    if (onConts[index].classList.contains("on")) {
-      onConts[index].classList.remove("on");
+    if (onClass[index].classList.contains("on")) {
+      onClass[index].classList.remove("on");
     } else {
-      onConts[index].classList.add("on");
+      onClass[index].classList.add("on");
     }
   });
 });

@@ -12,7 +12,7 @@
     ></script>
     <title>카카오뱅크-습작</title>
   </head>
-  <body class="no-scroll">
+  <body>
     <!-- header -->
     <div class="header">
       <div class="header-logo">
@@ -20,135 +20,138 @@
           <img src="images/logo.png" alt="카카오뱅크 로고" />
         </a>
       </div>
+    </div>
 
-      <div class="nav">
-        <ul class="nav-list">
-          <a class="list-title" href="#">카카오뱅크 소개</a>
+    <!-- nav -->
+    <div class="nav-btn" onclick="openMenu()"></div>
 
-          <a class="list-title" href="#">
-            IR투자정보
-            <i class="fa-solid fa-chevron-down"></i>
-          </a>
-          <li class="on">
-            <ul class="content">
-              <span>경영정보</span>
-              <li><a href="#">지속가능경영</a></li>
-              <hr />
-            </ul>
-            <ul class="content">
-              <span>IR자료실</span>
-              <li><a href="#">실적발표</a></li>
-              <li><a href="#">주가정보</a></li>
-              <hr />
-            </ul>
-            <ul class="content">
-              <span>IR일정</span>
-              <li><a href="#">IR행사</a></li>
-              <li><a href="#">IR미팅예약</a></li>
-              <li><a href="#">주주총회</a></li>
-              <hr />
-            </ul>
-          </li>
+    <div class="nav" onclick="openMenu()">
+      <ul class="nav-list">
+        <a class="list-title" href="#">카카오뱅크 소개</a>
 
-          <a class="list-title" href="#">
-            상품안내
-            <i class="fa-solid fa-chevron-down"></i>
-          </a>
-          <li class="on">
-            <ul class="content">
-              <span>예적금</span>
-              <li><a href="#">입출금통장</a></li>
-              <li><a href="#">모임통장</a></li>
-              <li><a href="#">세이프박스</a></li>
-              <li><a href="#">저금통</a></li>
-              <li><a href="#">기록통장</a></li>
-              <li><a href="#">정기예금</a></li>
-              <li><a href="#">자유적금</a></li>
-              <li><a href="#">26주적금</a></li>
-              <li><a href="#">한달적금</a></li>
-              <hr />
-            </ul>
+        <a class="list-title list-btn" href="#">
+          IR투자정보
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+        <li class="on">
+          <ul class="content">
+            <span>경영정보</span>
+            <li><a href="#">지속가능경영</a></li>
+            <hr />
+          </ul>
+          <ul class="content">
+            <span>IR자료실</span>
+            <li><a href="#">실적발표</a></li>
+            <li><a href="#">주가정보</a></li>
+            <hr />
+          </ul>
+          <ul class="content">
+            <span>IR일정</span>
+            <li><a href="#">IR행사</a></li>
+            <li><a href="#">IR미팅예약</a></li>
+            <li><a href="#">주주총회</a></li>
+            <hr />
+          </ul>
+        </li>
 
-            <ul class="content">
-              <span>대출</span>
-              <li><a href="#">비상금대출</a></li>
-              <li><a href="#">마이너스 통장대출</a></li>
-              <li><a href="#">신용대출</a></li>
-              <li><a href="#">중고차 구매대출</a></li>
-              <li><a href="#">전월세보증금 대출</a></li>
-              <li><a href="#">전월세보증금 대출 갈아타기</a></li>
-              <li><a href="#">주택담보대출</a></li>
-              <li><a href="#">주택담보대출 갈아타기</a></li>
-              <li><a href="#">신용대출 비교하기</a></li>
-              <li><a href="#">신용대출 갈아타기</a></li>
-              <hr />
-            </ul>
-            <ul class="content">
-              <span>투자/외환</span>
-              <li><a href="#">펀드</a></li>
-              <li><a href="#">증권사 주식계좌</a></li>
-              <li><a href="#">해외송금 보내기</a></li>
-              <li><a href="#">해외송금 받기</a></li>
-            </ul>
-            <ul class="content">
-              <span>카드/서비스</span>
-              <li><a href="#">프렌즈 체크카드</a></li>
-              <li><a href="#">제휴 신용카드</a></li>
-              <li><a href="#">혜택 좋은 신용카드</a></li>
-              <li><a href="#">내 신용정보</a></li>
-              <li><a href="#">개인금고</a></li>
-            </ul>
+        <a class="list-title list-btn" href="#">
+          상품안내
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+        <li class="on">
+          <ul class="content">
+            <span>예적금</span>
+            <li><a href="#">입출금통장</a></li>
+            <li><a href="#">모임통장</a></li>
+            <li><a href="#">세이프박스</a></li>
+            <li><a href="#">저금통</a></li>
+            <li><a href="#">기록통장</a></li>
+            <li><a href="#">정기예금</a></li>
+            <li><a href="#">자유적금</a></li>
+            <li><a href="#">26주적금</a></li>
+            <li><a href="#">한달적금</a></li>
+            <hr />
+          </ul>
 
-            <ul class="content">
-              <span>mini</span>
-              <li><a href="#">카카오뱅크 mini</a></li>
-              <li><a href="#">mini카드</a></li>
-              <li><a href="#">mini 26일저금</a></li>
-            </ul>
+          <ul class="content">
+            <span>대출</span>
+            <li><a href="#">비상금대출</a></li>
+            <li><a href="#">마이너스 통장대출</a></li>
+            <li><a href="#">신용대출</a></li>
+            <li><a href="#">중고차 구매대출</a></li>
+            <li><a href="#">전월세보증금 대출</a></li>
+            <li><a href="#">전월세보증금 대출 갈아타기</a></li>
+            <li><a href="#">주택담보대출</a></li>
+            <li><a href="#">주택담보대출 갈아타기</a></li>
+            <li><a href="#">신용대출 비교하기</a></li>
+            <li><a href="#">신용대출 갈아타기</a></li>
+            <hr />
+          </ul>
+          <ul class="content">
+            <span>투자/외환</span>
+            <li><a href="#">펀드</a></li>
+            <li><a href="#">증권사 주식계좌</a></li>
+            <li><a href="#">해외송금 보내기</a></li>
+            <li><a href="#">해외송금 받기</a></li>
+          </ul>
+          <ul class="content">
+            <span>카드/서비스</span>
+            <li><a href="#">프렌즈 체크카드</a></li>
+            <li><a href="#">제휴 신용카드</a></li>
+            <li><a href="#">혜택 좋은 신용카드</a></li>
+            <li><a href="#">내 신용정보</a></li>
+            <li><a href="#">개인금고</a></li>
+          </ul>
 
-            <ul class="content">
-              <span>사업자</span>
-              <li><a href="#">개인사업자통장</a></li>
-              <li><a href="#">개인사업자 신용대출</a></li>
-              <li><a href="#">개인사업자 보증서대출</a></li>
-              <li><a href="#">개인사업자 체크카드</a></li>
-              <li><a href="#">개인사업자 제휴 신용카드</a></li>
-              <li><a href="#">내 사업장 신용정보</a></li>
-            </ul>
-          </li>
+          <ul class="content">
+            <span>mini</span>
+            <li><a href="#">카카오뱅크 mini</a></li>
+            <li><a href="#">mini카드</a></li>
+            <li><a href="#">mini 26일저금</a></li>
+          </ul>
 
-          <a class="list-title" href="#">공지사항</a>
+          <ul class="content">
+            <span>사업자</span>
+            <li><a href="#">개인사업자통장</a></li>
+            <li><a href="#">개인사업자 신용대출</a></li>
+            <li><a href="#">개인사업자 보증서대출</a></li>
+            <li><a href="#">개인사업자 체크카드</a></li>
+            <li><a href="#">개인사업자 제휴 신용카드</a></li>
+            <li><a href="#">내 사업장 신용정보</a></li>
+          </ul>
+        </li>
 
-          <a class="list-title" href="#">이벤트</a>
+        <a class="list-title" href="#">공지사항</a>
 
-          <a class="list-title" href="#">자주 묻는 질문</a>
+        <a class="list-title" href="#">이벤트</a>
 
-          <a class="list-title" href="#">
-            관련사이트
-            <i class="fa-solid fa-chevron-down"></i>
-          </a>
-          <li class="on">
-            <ul class="content">
-              <li>
-                <a href="#">카카오뱅크 AD </a>
-                <i class="fa-solid fa-angle-right"></i>
-              </li>
-              <li>
-                <a href="#">카카오뱅크 인증서</a>
-                <i class="fa-solid fa-angle-right"></i>
-              </li>
-              <li>
-                <a href="#">금융기술연구소</a>
-                <i class="fa-solid fa-angle-right"></i>
-              </li>
-              <li>
-                <a href="#">기술블로그</a>
-                <i class="fa-solid fa-angle-right"></i>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+        <a class="list-title" href="#">자주 묻는 질문</a>
+
+        <a class="list-title list-btn" href="#">
+          관련사이트
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+        <li class="on">
+          <ul class="content">
+            <li>
+              <a href="#">카카오뱅크 AD </a>
+              <i class="fa-solid fa-angle-right"></i>
+            </li>
+            <li>
+              <a href="#">카카오뱅크 인증서</a>
+              <i class="fa-solid fa-angle-right"></i>
+            </li>
+            <li>
+              <a href="#">금융기술연구소</a>
+              <i class="fa-solid fa-angle-right"></i>
+            </li>
+            <li>
+              <a href="#">기술블로그</a>
+              <i class="fa-solid fa-angle-right"></i>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
 
     <!-- section1 -->
@@ -478,6 +481,7 @@
         </div>
       </div>
     </div>
-    <script src="/kakaoBank/js/index.js"></script>
+    <script src="/kakaoBank/js/openMenu.js"></script>
+    <script src="/kakaoBank/js/dropDownMenu.js"></script>
   </body>
 </html>
