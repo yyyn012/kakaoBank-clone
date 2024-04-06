@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 body {
@@ -147,7 +146,7 @@ a {
 .section1 {
   width: 100vw;
   height: 720px;
-  margin: 80px 0 80px 0;
+  padding: 80px 0 80px 0;
   background-color: #ffef6b;
 }
 
