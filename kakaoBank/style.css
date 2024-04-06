@@ -3,11 +3,6 @@
   padding: 0;
 }
 
-body {
-  width: 100vw;
-  height: 100vw;
-}
-
 a {
   color: #000;
   text-decoration: none;
@@ -23,19 +18,15 @@ a {
   padding: 0 24px 0;
   background-color: #ffef6b;
   display: flex;
+  align-items: center;
   transition: transform 0.3s ease-in-out;
   z-index: 99;
-  display: flex;
-  align-items: center;
 }
 
-.header-logo {
-  z-index: 9999;
-}
-
-.logo > img {
+.header-logo > .logo > img {
   width: 80px;
   height: 15px;
+  z-index: 99;
 }
 
 .header.active {
@@ -48,13 +39,12 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
+  right: 30px;
   width: 30px;
   height: 30px;
   cursor: pointer;
-  z-index: 99;
-  position: absolute;
-  top: 10px;
-  right: 30px;
+  z-index: 9999;
 }
 
 .nav-btn.active {
@@ -62,84 +52,70 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  right: 30px;
   width: 30px;
   height: 30px;
   cursor: pointer;
   transition: 0.3s;
-  z-index: 99;
-  top: 10px;
-  right: 30px;
+  z-index: 9999;
 }
 
 .nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 80px 25px 0;
-  padding-right: 25px;
-  width: 100vw;
-  height: 100vw;
   display: none;
-  background: #fff;
 }
 
 .nav.active {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
+  display: block;
   background: #fff;
-  width: 100vw;
-  height: 100vw;
-  border: 1px solid red;
 }
 
 .list-title {
-  font-size: 17px;
-  width: 100vw;
-  height: 70px;
-  line-height: 70px;
-  display: block;
-  font-weight: 700;
-  display: block;
-  padding-bottom: 5px;
-  cursor: pointer;
-  border-bottom: 1px solid #aaa;
-}
-
-.list-btn {
   display: flex;
   justify-content: space-between;
+  font-size: 17px;
+  height: 70px;
+  line-height: 70px;
+  cursor: pointer;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0 20px;
+}
+
+.on {
+  display: none;
 }
 
 .content {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-around;
+  /* display: flex;
   flex-direction: column;
+  justify-content: space-around; */
+  display: block;
+  /* margin: 0 20px; */
+  width: 100vw;
+  /* padding: 20px 0; */
+  background: #f7f7f7;
+  /* border: 1px solid red; */
+  border-top: #ededed;
+  border-bottom: #ededed;
 }
 
 .content > span {
-  color: #ccc;
-  font-size: 13px;
+  color: #aaaaaa;
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+.content > li > a {
+  font-size: 15px;
 }
 
 .list-div {
-  width: 100vw;
   height: 70px;
 }
 
 .list-item {
   display: block;
-  width: 100vw;
   height: 70px;
   line-height: 70px;
-  border-bottom: 1px solid #ccc;
-}
-
-.on {
-  display: none;
 }
 
 /* section1------------------------------------------*/
@@ -376,7 +352,7 @@ a {
 
 /* ------------------------------section-area */
 .section-area {
-  width: 100%;
+  width: 100vw;
   height: 35px;
   background: #fafafa;
 }
@@ -454,7 +430,7 @@ a {
 
 /* ------------------------------section-area */
 .section-area {
-  width: 100%;
+  width: 100vw;
   height: 35px;
   background: #fafafa;
 }
@@ -523,7 +499,7 @@ a {
 
 /* ------------------------------section-area */
 .section-area {
-  width: 100%;
+  width: 100vw;
   height: 35px;
   background: #fafafa;
 }
@@ -532,7 +508,7 @@ a {
 /* -----------------------------------------------section6 */
 
 .section6 {
-  width: 100%;
+  width: 100vw;
   height: 750px;
   background: #fff url(./images/home_map.png) no-repeat -12% 50%;
 }
@@ -618,7 +594,7 @@ a {
 
 /* -------------------------------------section7 */
 .section7 {
-  width: 100%;
+  width: 100vw;
   height: 900px;
   background: #333b58;
 }
@@ -637,7 +613,7 @@ a {
 }
 
 .section7 .section7-text {
-  width: 100%;
+  width: 100vw;
   text-align: center;
   margin-top: 170px;
 }
@@ -707,7 +683,7 @@ a {
 /* ---------------------------------------------------section9 */
 
 .section9 {
-  width: 100%;
+  width: 100vw;
   padding: 0;
   margin: 0 auto;
   display: flex;
@@ -783,7 +759,7 @@ a {
 /* ----------------------------------------------footer */
 
 .footer {
-  width: 100%;
+  width: 100vw;
   height: auto;
   background: #e7e7e7;
 }
