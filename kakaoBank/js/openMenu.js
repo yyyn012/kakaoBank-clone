@@ -2,6 +2,13 @@ const navBtn = document.querySelector(".nav-btn");
 const nav = document.querySelector(".nav");
 
 function openMenu() {
-  navBtn.classList.toggle("active");
-  nav.classList.toggle("active");
+  if (nav.classList.contains("active")) {
+    nav.classList.remove("active");
+    navBtn.classList.remove("active");
+  } else {
+    nav.classList.add("active");
+    navBtn.classList.add("active");
+  }
 }
+
+navBtn.addEventListener("click", openMenu);

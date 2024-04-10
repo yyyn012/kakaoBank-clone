@@ -1,3 +1,5 @@
+// const nav = document.querySelector(".nav");
+
 const listBtn = document.querySelectorAll(".list-btn");
 const arrowIcon = document.querySelectorAll(".list-btn > i");
 const onClass = document.querySelectorAll(".on");
@@ -9,10 +11,10 @@ listBtn.forEach((btn, index) => {
   btn.addEventListener("click", (e) => {
     if (onClass[index].classList.contains("on")) {
       onClass[index].classList.remove("on");
-      // arrowIcon.innerHTML = "" + "<i class='fas fa-chevron-up'></i>";
+      // arrowIcon.innerHTML = "" += "<i class='fas fa-chevron-up'></i>";
     } else {
       onClass[index].classList.add("on");
-      // arrowIcon.innerHTML = "" + "<i class='fas fa-chevron-down'></i>";
+      // arrowIcon.innerHTML = "" += "<i class='fas fa-chevron-down'></i>";
     }
   });
 });
