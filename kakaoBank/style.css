@@ -101,7 +101,7 @@ a {
 .content {
   display: block;
   background: #f7f7f7;
-  padding: 24px 24px 0;
+  padding: 0 24px;
 }
 
 .content:last-child {
@@ -109,9 +109,10 @@ a {
 }
 
 .content > span {
+  display: block;
   color: #aaaaaa;
   font-size: 12px;
-  padding: 10px 0;
+  padding-top: 25px;
 }
 
 .content > li > a {
@@ -125,7 +126,7 @@ a {
 .list-item {
   display: block;
   height: auto;
-  margin-top: 24px;
+  padding-top: 24px;
 }
 
 .list-item:last-child {
@@ -138,6 +139,11 @@ a {
   height: 10px;
   background: #f0f0f0;
 }
+/* 
+.last-content {
+  margin: 0;
+  padding: 0;
+} */
 
 /* section1------------------------------------------*/
 .section1 {
