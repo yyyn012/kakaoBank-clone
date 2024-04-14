@@ -1,6 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
 }
 
 a {
@@ -53,6 +60,7 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
   right: 30px;
   width: 30px;
   height: 30px;
@@ -62,20 +70,24 @@ a {
 }
 
 .nav {
-  position: absolute;
+  position: relative;
   top: 80px;
   left: 0;
   width: 100vw;
+  height: 100vw;
   display: none;
+  overflow-x: hidden;
+  /* box-sizing: border-box; */
 }
 
 .nav.active {
+  position: relative;
   display: block;
   background: #fff;
-}
-
-.nav-title {
-  padding-top: 180px;
+  height: 100vh;
+  overflow-x: hidden;
+  z-index: 99;
+  border: 1px solid red;
 }
 
 .list-title {
@@ -83,9 +95,11 @@ a {
   justify-content: space-between;
   align-items: center;
   font-size: 17px;
+  width: 90%;
   height: 70px;
   line-height: 70px;
   cursor: pointer;
+  margin: 0 auto;
   padding: 0 20px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -101,7 +115,7 @@ a {
 .content {
   display: block;
   background: #f7f7f7;
-  padding: 0 24px;
+  /* padding: 0 24px; */
 }
 
 .content:last-child {
@@ -112,7 +126,7 @@ a {
   display: block;
   color: #aaaaaa;
   font-size: 12px;
-  padding-top: 25px;
+  /* padding-top: 25px; */
 }
 
 .content > li > a {
@@ -126,7 +140,7 @@ a {
 .list-item {
   display: block;
   height: auto;
-  padding-top: 24px;
+  /* padding-top: 24px; */
 }
 
 .list-item:last-child {
@@ -139,17 +153,18 @@ a {
   height: 10px;
   background: #f0f0f0;
 }
-/* 
-.last-content {
-  margin: 0;
-  padding: 0;
-} */
+
+.lang-wrap {
+  margin: 120px 0 30px;
+  /* padding: 30px 20px; */
+  text-align: right;
+  font-size: 17px;
+}
 
 /* section1------------------------------------------*/
 .section1 {
   width: 100vw;
   height: 720px;
-  padding: 80px 0 80px 0;
   background-color: #ffef6b;
 }
 
@@ -157,6 +172,7 @@ a {
   position: relative;
   /* max-width: 1200px; */
   height: 980px;
+  padding: 80px 0 80px 0;
   margin: 0 auto;
   background-image: url(images/main1.png);
   background-size: contain;
