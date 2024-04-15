@@ -29,6 +29,8 @@ a {
   align-items: center;
   transition: transform 0.3s ease-in-out;
   z-index: 9999;
+  /* overflow-x: hidden; */
+  /* box-sizing: border-box; */
 }
 
 .header-logo > .logo > img {
@@ -40,6 +42,8 @@ a {
 .header.active {
   background-color: white;
   border-bottom: 1px solid #e6e3e3;
+  /* overflow-x: hidden; */
+  /* box-sizing: border-box; */
 }
 
 .nav-btn {
@@ -76,7 +80,7 @@ a {
   width: 100vw;
   height: 100vw;
   display: none;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   /* box-sizing: border-box; */
 }
 
@@ -85,9 +89,15 @@ a {
   display: block;
   background: #fff;
   height: 100vh;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  /* box-sizing: border-box; */
   z-index: 99;
   border: 1px solid red;
+}
+
+.nav-list {
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .list-title {
