@@ -1,6 +1,7 @@
 // const nav = document.querySelector(".nav");
 
 const listBtn = document.querySelectorAll(".list-btn");
+const listTitle = document.querySelectorAll(".list-title");
 const arrowIcon = document.querySelectorAll(".list-btn > i");
 const onClass = document.querySelectorAll(".on");
 const content = document.querySelectorAll(".content");
@@ -15,6 +16,17 @@ listBtn.forEach((btn, index) => {
     } else {
       onClass[index].classList.add("on");
       // arrowIcon.innerHTML = "" += "<i class='fas fa-chevron-down'></i>";
+    }
+  });
+});
+
+listTitle.forEach((btn, index) => {
+  btn.addEventListener("click", (e) => {
+    if (listTitle[index].classList.contains("border-none")) {
+      listTitle[index].classList.remove("border-none");
+    } else {
+      console.log(listTitle[index]);
+      listTitle[index].classList.add("border-none");
     }
   });
 });
