@@ -4,8 +4,10 @@ const arrowIcon = document.querySelectorAll(".list-btn > i");
 const onClass = document.querySelectorAll(".on");
 const content = document.querySelectorAll(".content");
 const contentList = document.querySelectorAll(".content > li");
+const fold = document.getElementById("fold");
 
 // listBtn 클릭 시 on클래스 제거로 contentList 보여지게 하기
+
 listBtn.forEach((btn, index) => {
   btn.addEventListener("click", (e) => {
     if (onClass[index].classList.contains("on")) {
@@ -16,19 +18,30 @@ listBtn.forEach((btn, index) => {
   });
 });
 
-// listTitle 클릭 시 border-bottom 보여지게 하기
-listTitle.forEach((btn, index) => {
+// arrow icon fold
+listBtn.forEach((btn, index) => {
   btn.addEventListener("click", (e) => {
-    if (listTitle[index].classList.contains("border-none")) {
-      listTitle[index].classList.remove("border-none");
+    if (onClass[index].classList.contains("on")) {
+      console.log(onClass[index].fold);
+      fold.innerHTML = "<i class='fa-solid fa-chevron-up'></i>";
     } else {
-      console.log(listTitle[index]);
-      listTitle[index].classList.add("border-none");
+      fold.innerHTML = "<i class='fa-solid fa-chevron-down'></i>";
     }
   });
 });
 
-// list-item 클래스 추가
+// listTitle 클릭 시 border-bottom 사라짐
+listBtn.forEach((btn, index) => {
+  btn.addEventListener("click", (e) => {
+    if (listBtn[index].classList.contains("border-none")) {
+      listBtn[index].classList.remove("border-none");
+    } else {
+      listBtn[index].classList.add("border-none");
+    }
+  });
+});
+
+// list-item에 클래스 추가
 contentList.forEach(() => {
   for (let i = 0; i < contentList.length; i++) {
     contentList[i].classList.add("list-item");
