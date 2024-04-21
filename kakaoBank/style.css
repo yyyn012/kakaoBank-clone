@@ -35,11 +35,6 @@ a {
   background-color: #fff;
 }
 
-/* .header.active {
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
-} */
-
 .header-logo > .logo > img {
   width: 80px;
   height: 14px;
@@ -82,8 +77,6 @@ a {
   width: 100vw;
   height: auto;
   display: none;
-  overflow-y: visible;
-  overflow-y: scroll;
 }
 
 .nav.active {
@@ -94,9 +87,7 @@ a {
   padding-top: 60px;
   background: #fff;
   height: 100vh;
-  /* z-index: 99; */
   overflow-x: hidden;
-  overflow-y: visible;
   overflow-y: scroll;
 }
 
@@ -132,11 +123,11 @@ a {
   height: 20px;
 }
 
-.last-border-none {
+.border-none {
   border: none;
 }
 
-.border-none {
+.last-border-none {
   border: none;
 }
 
@@ -211,21 +202,26 @@ a {
   color: #e5e5e5;
 }
 
-/* section */
+/* common section */
 
 .cont {
+  position: flex;
+  /* align-items: center; */
+  text-align: center;
+  /* vertical-align: middle; */
   width: 600px;
-  height: 720px;
+  height: auto;
   padding: 150px 90px 90px 90px;
 }
 
 .main-txt {
-  text-decoration: none;
-  font-size: 41px;
-  font-weight: bold;
+  font-size: 33px;
+  /* font-weight: 600; */
   line-height: 1.2;
-  margin-bottom: -14px;
-  margin-bottom: 40px;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  padding: 50px 0 8px 0;
 }
 
 .cont-btn {
@@ -262,39 +258,35 @@ a {
   width: 100vw;
   height: 660px;
   background-color: #ffef6b;
-  overflow-x: hidden;
-  border: 1px solid red;
 }
 
 .section1-backImg {
-  display: flex;
-  align-items: center;
   position: absolute;
   top: 0;
   bottom: 115px;
+  width: 100vw;
+  height: 580px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
   background-image: url(images/section1-main.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  border: 1px solid blue;
-  width: 100vw;
-  height: 580px;
-  margin: 0 auto;
 }
 
-.section1-p1,
-.section1-p2 {
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 1.6;
+.section1-txt {
+  font-size: 13px;
+  line-height: 1.3;
+  padding-bottom: 15px;
+  opacity: 0.7;
 }
 
-.section1-p2 {
-  padding: 15px 0 50px 0;
+.section1-btn-area {
+  display: flex;
 }
 
 .section1-btn {
-  float: left;
   width: 180px;
   height: 58px;
   border: none;
@@ -368,14 +360,13 @@ a {
   align-items: center;
 }
 
-.cont {
+/* .cont {
   width: 600px;
 }
 
 .main-txt {
   height: 150px;
   font-size: 33px;
-  font-weight: bold;
 }
 
 .cont-txt {
@@ -383,7 +374,7 @@ a {
   font-size: 15px;
   line-height: 1.7;
   margin-bottom: 20px;
-}
+} */
 
 .section3-btn {
   width: 165px;
@@ -442,7 +433,7 @@ a {
 
 .section4 .section4-span {
   font-size: 40px;
-  font-weight: bold;
+  /* font-weight: bold; */
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -515,7 +506,7 @@ a {
 
 .section5 .section5-h3 {
   font-size: 33px;
-  font-weight: bold;
+  /* font-weight: bold; */
   line-height: 1.25;
   margin-bottom: 25px;
 }
