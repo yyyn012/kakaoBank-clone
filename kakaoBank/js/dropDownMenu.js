@@ -1,31 +1,18 @@
 const listBtn = document.querySelectorAll(".list-btn");
-const listTitle = document.querySelectorAll(".list-title");
-const arrowIcon = document.querySelectorAll(".list-btn > i");
 const onClass = document.querySelectorAll(".on");
-const content = document.querySelectorAll(".content");
 const contentList = document.querySelectorAll(".content > li");
-const fold = document.getElementById("fold");
+const fold = document.querySelectorAll(".fold");
 
 // listBtn 클릭 시 on클래스 제거로 contentList 보여지게 하기
-
-listBtn.forEach((btn, index) => {
-  btn.addEventListener("click", (e) => {
-    if (onClass[index].classList.contains("on")) {
-      onClass[index].classList.remove("on");
-    } else {
-      onClass[index].classList.add("on");
-    }
-  });
-});
-
 // arrow icon fold
 listBtn.forEach((btn, index) => {
   btn.addEventListener("click", (e) => {
     if (onClass[index].classList.contains("on")) {
-      console.log(onClass[index].fold);
-      fold.innerHTML = "<i class='fa-solid fa-chevron-up'></i>";
+      onClass[index].classList.remove("on");
+      fold[index].classList.add("active");
     } else {
-      fold.innerHTML = "<i class='fa-solid fa-chevron-down'></i>";
+      onClass[index].classList.add("on");
+      fold[index].classList.remove("active");
     }
   });
 });

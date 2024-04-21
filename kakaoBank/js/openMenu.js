@@ -1,20 +1,20 @@
-const html = document.querySelector("html");
 const body = document.querySelector("body");
 const navBtn = document.querySelector(".nav-btn");
 const nav = document.querySelector(".nav");
+const headerColor = document.querySelector(".header");
 
-// menu open 시 navBtn x로 바뀌게 하기, menu hidden 제거, body scroll 제거
+// menu open 시 navBtn event, menu hidden, body scroll 제거, header backgroundColor white로 변경
 function openMenu() {
   if (nav.classList.contains("active")) {
+    body.classList.remove("noScroll");
     nav.classList.remove("active");
     navBtn.classList.remove("active");
-    html.classList.remove("noScroll");
-    body.classList.remove("noScroll");
+    headerColor.classList.remove("header-color");
   } else {
+    body.classList.add("noScroll");
     nav.classList.add("active");
     navBtn.classList.add("active");
-    html.classList.add("noScroll");
-    body.classList.add("noScroll");
+    headerColor.classList.add("header-color");
   }
 }
 

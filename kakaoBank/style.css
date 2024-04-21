@@ -31,10 +31,14 @@ a {
   z-index: 99;
 }
 
-.header.active {
+.header-color {
+  background-color: #fff;
+}
+
+/* .header.active {
   background-color: #fff;
   border-bottom: 1px solid #ccc;
-}
+} */
 
 .header-logo > .logo > img {
   width: 80px;
@@ -72,19 +76,27 @@ a {
 
 .nav {
   position: relative;
-  top: 70px;
+  top: 0;
   left: 0;
+  padding-top: 60px;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   display: none;
-  overflow: hidden;
+  overflow-y: visible;
+  overflow-y: scroll;
 }
 
 .nav.active {
-  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  padding-top: 60px;
   background: #fff;
   height: 100vh;
-  z-index: 99;
+  /* z-index: 99; */
+  overflow-x: hidden;
+  overflow-y: visible;
   overflow-y: scroll;
 }
 
@@ -100,8 +112,24 @@ a {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.list-title > i {
-  padding-right: 5px;
+.fold {
+  display: inline-block;
+  background: url(/static/images/m/arrow-40-d.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.fold.active {
+  display: inline-block;
+  background: url(/static/images/m/arrow-40.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
 }
 
 .last-border-none {
