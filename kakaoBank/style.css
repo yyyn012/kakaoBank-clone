@@ -568,28 +568,66 @@ a {
 
 .footer {
   position: relative;
-  width: 100vw;
   height: 150px;
   background: #f7f7f7;
   opacity: 0.9;
-  padding-top: 94px 20px 15px 13px;
 }
 
-.footer .footer-area {
+.footer-area {
   position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  line-height: 0.4;
 }
+
+.footer-info {
+  padding: 94px 20px 15px 13px;
+  line-height: 0.4;
+}
+
+/* .footer > .footer-info {
+  padding: 14px 20px 15px 13px;
+} */
 
 .footer-area > .footer-info > a,
 .footer-area > .footer-number {
   font-size: 11px;
   color: #666;
-  line-height: 1.4;
+  line-height: 1.1;
 }
 
-.footer-area > .footer-info > strong {
+.footer-info > strong {
   font-size: 11px;
   color: #000;
   font-weight: bold;
+}
+
+.txt-bar {
+  display: inline-block;
+  width: 1px;
+  height: 8px;
+  margin: 1px 0 0;
+  background-color: #acacac;
+}
+
+.footer-number {
+  width: 100vw;
+  padding: 5px 7px;
+  font-size: 11px;
+  line-height: 16px;
+  color: #666;
+}
+
+.footer-copyright {
+  width: 100vw;
+  padding-left: 7px;
+}
+
+.footer-copyright > p {
+  font-size: 10px;
+  line-height: 1.5px;
+  color: #888;
 }
 
 .footer-web > img {
