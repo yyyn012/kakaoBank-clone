@@ -33,17 +33,13 @@ a {
   z-index: 999999;
 }
 
-.header-color {
-  background-color: #fff;
-}
-
 .header-logo > .logo > img {
   width: 80px;
   height: 14px;
 }
 
 .header.active {
-  background-color: white;
+  background-color: #fff;
   border-bottom: 1px solid #e6e3e3;
 }
 
