@@ -10,11 +10,4 @@ const headerScroll = () => {
   }
 };
 
-const headerColor = () => {
-  header.style.backgroundColor = "#fff";
-  header.style.borderBottom = "1px solid e6e3e3";
-};
-
 document.addEventListener("scroll", headerScroll);
-
-window.addEventListener("load", headerColor);
