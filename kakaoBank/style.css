@@ -448,9 +448,21 @@ a {
 
 /* -------------------------------------section7 */
 .section7 {
-  background-color: #559cde;
-  /* background: #333b58; */
   padding-top: 60px;
+  opacity: 1;
+  visibility: visible;
+  background-color: #333b58;
+}
+
+.blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 818px;
+  background-color: #559cde;
+  transition: height 0.85s;
+  opacity: 0.3;
 }
 
 .section7 > .cont {
@@ -485,6 +497,20 @@ a {
   max-width: 346px;
   width: 345px;
   height: 435px;
+}
+
+.ico_star {
+  background-color: #fff;
+  transition: cubic-bezier(0.6, 0.2, 0.1, 1) 0s,
+    opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+}
+
+.ico_star1 {
+  top: 27%;
+  left: 10%;
+}
+
+.ico_star2 {
 }
 
 /* ------------------------------------section8 */
