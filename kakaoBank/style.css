@@ -39,8 +39,8 @@ a {
 }
 
 .header.active {
-  background-color: #fff;
-  border-bottom: 1px solid #e6e3e3;
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .nav-btn {
@@ -66,28 +66,22 @@ a {
   z-index: 999999;
 }
 
+.nav,
+.nav.active {
+  position: fixed;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 .nav {
-  position: relative;
-  top: 0;
-  left: 0;
-  padding-top: 60px;
-  width: 100vw;
-  height: auto;
   display: none;
-  z-index: 99999;
 }
 
 .nav.active {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: inline-block;
+  display: block;
   padding-top: 60px;
   background: #fff;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
   z-index: 99999;
 }
 
