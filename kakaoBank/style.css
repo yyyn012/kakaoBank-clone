@@ -76,6 +76,7 @@ a {
 
 .nav {
   display: none;
+  transition: 0.85s;
 }
 
 .nav.active {
@@ -449,20 +450,41 @@ a {
 /* -------------------------------------section7 */
 .section7 {
   padding-top: 60px;
-  opacity: 1;
-  visibility: visible;
+  /* opacity: 1;
+  visibility: visible; */
+  z-index: 1;
   background-color: #333b58;
+}
+
+.sky {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #333b58;
+  color: #000;
+  overflow: hidden;
+  transition: 0.4s;
+  z-index: 0;
 }
 
 .blue {
   position: absolute;
-  top: 0;
+  /* top: 0; */
+  right: 0;
   left: 0;
-  width: 100vw;
-  height: 818px;
+  bottom: 0;
+  /* width: 100vw; */
+  height: 0vh;
+  /* height: 818px; */
   background-color: #559cde;
-  transition: height 0.85s;
-  opacity: 0.3;
+  /* transition: height 0.85s; */
+  /* opacity: 0.3; */
+  visibility: visible;
+  opacity: 1;
+  z-index: 0;
 }
 
 .section7 > .cont {
@@ -508,9 +530,6 @@ a {
 .ico_star1 {
   top: 27%;
   left: 10%;
-}
-
-.ico_star2 {
 }
 
 /* ------------------------------------section8 */

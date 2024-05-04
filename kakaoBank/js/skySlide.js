@@ -1,26 +1,12 @@
-// box 클래스를 가진 DOM 요소들의 NodeList를 반환
-const section7 = document.querySelectorAll(".section7");
+const blue = document.querySelector(".blue");
 
-// 영역 감지되면 실행될 콜백
-const animateBox = function (entries, observer) {
-  // Destructuring
-  const [{ isIntersecting, target }] = entries;
+const intersectionObserver = new IntersectionObserver(function (entries) {
+  // intersectionRatio가 0이라는 것은 대상을 볼 수 없다는 것이므로 아무것도 하지 않음
+  if (entries[0].intersectionRatio <= 0) return;
 
-  // 만약 영역 감지가 true라면 class 추가, 아니면 제거
-  if (isIntersecting) {
-    target.classList.add("blue");
-  } else {
-    target.classList.remove("blue");
-  }
-};
-
-// intersection observer 생성자 초기화 (관찰자)
-const io = new IntersectionObserver(animateBox, {
-  root: null,
-  threshold: 0.5,
+  blue.classList.add("blue active");
+  // blue.classList.remove("blue");
 });
 
-// NodeList의 각 요소들 감시 시작
-boxes.forEach((e) => {
-  io.observe(e);
-});
+// 주시 시작
+intersectionObserver.observe(document.querySelector(".section7"));
