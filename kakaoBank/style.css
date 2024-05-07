@@ -514,10 +514,9 @@ a {
   position: absolute;
   width: 4px;
   height: 4px;
-  /* background-color: #989caa; */
   border-radius: 4px;
-  transition: cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s,
-    opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s ease-in-out;
+  transition: opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s,
+    opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
 }
 
 .ico_star1 {
@@ -566,27 +565,18 @@ a {
   0% {
     width: 0.5px;
     height: 0.5px;
-    /* opacity: 0.1; */
+    opacity: 0.1;
   }
-  /* 15% {
+  15% {
     width: 1px;
     height: 1px;
     opacity: 0.15;
   }
-  30% {
-    width: 1.5px;
-    height: 1.5px;
-    opacity: 0.3;
-  }
+
   45% {
     width: 2px;
     height: 2px;
     opacity: 0.45;
-  }
-  60% {
-    width: 2.5px;
-    height: 2.5px;
-    opacity: 0.6;
   }
 
   75% {
@@ -595,15 +585,10 @@ a {
     opacity: 0.75;
   }
 
-  90% {
-    width: 3.5px;
-    height: 3.5px;
-    opacity: 0.9;
-  } */
   100% {
     width: 4px;
     height: 4px;
-    /* opacity: 1; */
+    opacity: 1;
   }
 }
 
